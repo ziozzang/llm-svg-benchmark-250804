@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 900 700">
+  <style>
+    .bg { fill:#f7f7fb; }
+    .river { fill:none; stroke:#4aa3ff; stroke-width:28; stroke-linecap:round; opacity:0.9; }
+    .stream { fill:none; stroke:#4aa3ff; stroke-width:8; stroke-linecap:round; opacity:0.85; }
+    .lake { fill:#4aa3ff; opacity:0.9; }
+    .park { fill:#9ad67a; opacity:0.9; }
+    .gu { stroke:#555; stroke-width:1.5; }
+    .label { font-family: "Pretendard", "Malgun Gothic", Arial, sans-serif; font-size:12px; fill:#1e293b; text-anchor:middle; }
+    .legend { font-family: "Pretendard", "Malgun Gothic", Arial, sans-serif; font-size:12px; fill:#334155; }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="900" height="700"/>
+
+  <!-- 한강 -->
+  <path class="river" d="M80,400 C200,360 360,470 500,420 C640,370 760,420 860,405"/>
+  <!-- 여의도 -->
+  <polygon class="lake" points="300,410 358,418 330,435 275,427" />
+
+  <!-- 하천: 중랑천, 안양천 -->
+  <path class="stream" d="M590,150 L545,200 L520,240 L500,280 L520,320 L560,380" />
+  <path class="stream" d="M170,610 L220,560 L260,540 L300,500 L340,470 L350,440" />
+
+  <!-- 산지(개략): 북한산·도봉산, 남산 -->
+  <path class="park" d="M330,85 L380,70 L440,85 L430,110 L370,115 Z"/>
+  <circle class="park" cx="335" cy="255" r="14"/>
+
+  <!-- 북쪽(한강 북안) 14개 구 -->
+  <!-- 은평구 -->
+  <polygon id="eunpyeong" class="gu" fill="#fde68a" points="80,120 160,100 200,140 180,200 120,220 90,180"/>
+  <text class="label" x="145" y="165">은평구</text>
+
+  <!-- 서대문구 -->
+  <polygon id="seodaemun" class="gu" fill="#fca5a5" points="160,160 230,150 260,200 220,230 170,210"/>
+  <text class="label" x="210" y="190">서대문구</text>
+
+  <!-- 마포구 -->
+  <polygon id="mapo" class="gu" fill="#a7f3d0" points="120,260 200,250 260,280 220,330 150,320"/>
+  <text class="label" x="200" y="300">마포구</text>
+
+  <!-- 종로구 -->
+  <polygon id="jongno" class="gu" fill="#bfdbfe" points="250,130 340,120 380,160 340,200 280,190"/>
+  <text class="label" x="320" y="165">종로구</text>
+
+  <!-- 중구 -->
+  <polygon id="jung" class="gu" fill="#ddd6fe" points="300,220 360,210 380,240 350,270 300,260"/>
+  <text class="label" x="340" y="245">중구</text>
+
+  <!-- 용산구 -->
+  <polygon id="yongsan" class="gu" fill="#fecaca" points="280,300 360,290 380,320 330,350 270,340"/>
+  <text class="label" x="325" y="325">용산구</text>
+
+  <!-- 성북구 -->
+  <polygon id="seongbuk" class="gu" fill="#c7d2fe" points="360,130 430,130 450,170 400,200 340,200"/>
+  <text class="label" x="400" y="165">성북구</text>
+
+  <!-- 동대문구 -->
+  <polygon id="dongdaemun" class="gu" fill="#fbcfe8" points="380,200 450,190 470,220 430,260 380,240"/>
+  <text class="label" x="430" y="225">동대문구</text>
+
+  <!-- 성동구 -->
+  <polygon id="seongdong" class="gu" fill="#bbf7d0" points="400,260 460,250 480,280 440,310 390,300"/>
+  <text class="label" x="440" y="290">성동구</text>
+
+  <!-- 광진구 -->
+  <polygon id="gwangjin" class="gu" fill="#fde68a" points="470,240 540,240 560,270 520,300 480,280"/>
+  <text class="label" x="520" y="270">광진구</text>
+
+  <!-- 중랑구 -->
+  <polygon id="jungnang" class="gu" fill="#fca5a5" points="470,180 540,180 560,210 520,240 470,220"/>
+  <text class="label" x="520" y="205">중랑구</text>
+
+  <!-- 강북구 -->
+  <polygon id="gangbuk" class="gu" fill="#a7f3d0" points="380,90 440,90 430,130 360,130 340,110"/>
+  <text class="label" x="400" y="115">강북구</text>
+
+  <!-- 도봉구 -->
+  <polygon id="dobong" class="gu" fill="#bfdbfe" points="440,70 500,70 500,110 440,110"/>
+  <text class="label" x="470" y="95">도봉구</text>
+
+  <!-- 노원구 -->
+  <polygon id="nowon" class="gu" fill="#ddd6fe" points="520,120 600,120 600,180 540,180 520,150"/>
+  <text class="label" x="565" y="155">노원구</text>
+
+  <!-- 남쪽(한강 남안) 11개 구 -->
+  <!-- 강서구 -->
+  <polygon id="gangseo" class="gu" fill="#c7d2fe" points="110,470 200,460 210,520 150,540 100,510"/>
+  <text class="label" x="160" y="505">강서구</text>
+
+  <!-- 양천구 -->
+  <polygon id="yangcheon" class="gu" fill="#fbcfe8" points="210,500 260,490 270,540 220,560 190,540"/>
+  <text class="label" x="235" y="530">양천구</text>
+
+  <!-- 영등포구 -->
+  <polygon id="yeongdeungpo" class="gu" fill="#bbf7d0" points="260,470 320,460 330,510 280,520"/>
+  <text class="label" x="305" y="500">영등포구</text>
+
+  <!-- 구로구 -->
+  <polygon id="guro" class="gu" fill="#fde68a" points="230,560 300,550 310,600 250,610"/>
+  <text class="label" x="280" y="590">구로구</text>
+
+  <!-- 금천구 -->
+  <polygon id="geumcheon" class="gu" fill="#fca5a5" points="310,590 360,580 360,620 320,630"/>
+  <text class="label" x="345" y="610">금천구</text>
+
+  <!-- 동작구 -->
+  <polygon id="dongjak" class="gu" fill="#a7f3d0" points="340,500 390,490 400,530 350,540"/>
+  <text class="label" x="375" y="520">동작구</text>
+
+  <!-- 관악구 -->
+  <polygon id="gwanak" class="gu" fill="#bfdbfe" points="350,560 420,550 430,610 360,620"/>
+  <text class="label" x="400" y="595">관악구</text>
+
+  <!-- 서초구 -->
+  <polygon id="seocho" class="gu" fill="#ddd6fe" points="400,500 460,490 480,530 430,540"/>
+  <text class="label" x="455" y="520">서초구</text>
+
+  <!-- 강남구 -->
+  <polygon id="gangnam" class="gu" fill="#c7d2fe" points="480,500 540,490 560,530 500,540"/>
+  <text class="label" x="530" y="520">강남구</text>
+
+  <!-- 송파구 -->
+  <polygon id="songpa" class="gu" fill="#fbcfe8" points="560,500 620,490 640,530 580,540"/>
+  <text class="label" x="610" y="520">송파구</text>
+
+  <!-- 강동구 -->
+  <polygon id="gangdong" class="gu" fill="#bbf7d0" points="640,490 700,480 700,520 650,530"/>
+  <text class="label" x="680" y="510">강동구</text>
+
+  <!-- 지도 제목 -->
+  <text x="20" y="32" class="legend" style="font-size:18px; font-weight:700;">서울 개략 지도 (자체 작성, 비정밀)</text>
+  <text x="20" y="54" class="legend">• 굵은 파란 선: 한강 / 얇은 파란 선: 중랑천·안양천  • 연두색: 주요 녹지(개략)</text>
+</svg>
+

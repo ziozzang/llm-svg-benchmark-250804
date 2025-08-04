@@ -1,0 +1,144 @@
+<svg width="1000" height="800" viewBox="0 0 1000 800" style="font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;">
+  <title>서울 25개 구 지도 (근사치)</title>
+  <style>
+    .district {
+      fill: #f0f0f0;
+      stroke: #888;
+      stroke-width: 1;
+      transition: fill 0.3s ease;
+      cursor: pointer;
+    }
+    .district:hover {
+      fill: #e0e0e0;
+    }
+    .district-name {
+      font-size: 10px;
+      fill: #333;
+      text-anchor: middle;
+      pointer-events: none; /* 텍스트가 마우스 이벤트를 가로채지 않도록 */
+    }
+    .han-river {
+      fill: #a0d0ed; /* 밝은 파랑 */
+      stroke: #70b0d0;
+      stroke-width: 2;
+    }
+    .mountains {
+      fill: #c0d8c0; /* 연한 녹색 (산) */
+      stroke: #90a890;
+      stroke-width: 1;
+    }
+    .map-title {
+      font-size: 24px;
+      font-weight: bold;
+      fill: #222;
+      text-anchor: middle;
+    }
+    .subtitle {
+      font-size: 12px;
+      fill: #666;
+      text-anchor: middle;
+    }
+  </style>
+
+  <text x="500" y="30" class="map-title">서울 25개 구 지도</text>
+  <text x="500" y="55" class="subtitle">(한강 및 자연 환경 포함 - 경계선은 근사치)</text>
+
+  <!-- 자연 환경: 산 -->
+  <g class="mountains">
+    <title>북한산 / 도봉산</title>
+    <path d="M 0 100 C 100 0, 300 0, 400 100 L 450 150 C 500 100, 600 50, 700 100 L 800 150 C 900 100, 1000 150, 1000 200 L 1000 250 L 0 250 Z" />
+    <title>관악산 / 청계산</title>
+    <path d="M 0 700 C 150 650, 300 600, 450 650 L 550 700 C 700 650, 850 600, 1000 650 L 1000 800 L 0 800 Z" />
+    <title>남산</title>
+    <path d="M 450 400 C 480 380, 520 380, 550 400 L 525 420 L 475 420 Z" />
+  </g>
+
+  <!-- 자연 환경: 한강 -->
+  <g class="han-river">
+    <title>한강</title>
+    <path d="M 0 450 C 100 420, 200 480, 300 450 S 450 400, 600 430 S 750 480, 900 450 S 1000 430, 1000 430 L 1000 480 S 900 500, 750 530 S 600 480, 450 500 S 300 530, 200 470 S 100 500, 0 480 Z" />
+  </g>
+
+  <!-- 서울 25개 구 (위치 및 경계선은 대략적인 표현) -->
+  <g id="districts-layer">
+    <!-- 강북구 -->
+    <path id="gangbuk-gu" class="district" d="M470 240 L500 230 L550 240 L540 280 L490 290 L460 270 Z"><title>강북구</title></path>
+    <!-- 광진구 -->
+    <path id="gwangjin-gu" class="district" d="M720 400 L780 410 L800 450 L750 480 L700 460 L680 430 Z"><title>광진구</title></path>
+    <!-- 구로구 -->
+    <path id="guro-gu" class="district" d="M150 570 L250 580 L280 620 L200 650 L120 620 Z"><title>구로구</title></path>
+    <!-- 금천구 -->
+    <path id="geumcheon-gu" class="district" d="M200 650 L280 620 L300 670 L250 700 Z"><title>금천구</title></path>
+    <!-- 노원구 -->
+    <path id="nowon-gu" class="district" d="M600 150 L750 180 L780 230 L700 250 L650 200 Z"><title>노원구</title></path>
+    <!-- 도봉구 -->
+    <path id="dobong-gu" class="district" d="M500 180 L590 170 L600 220 L550 240 L500 230 Z"><title>도봉구</title></path>
+    <!-- 동대문구 -->
+    <path id="dongdaemun-gu" class="district" d="M550 300 L620 310 L650 360 L600 380 L520 360 Z"><title>동대문구</title></path>
+    <!-- 동작구 -->
+    <path id="dongjak-gu" class="district" d="M380 550 L450 540 L480 580 L420 610 L350 580 Z"><title>동작구</title></path>
+    <!-- 마포구 -->
+    <path id="mapo-gu" class="district" d="M200 350 L280 340 L350 400 L300 440 L220 420 Z"><title>마포구</title></path>
+    <!-- 서대문구 -->
+    <path id="seodaemun-gu" class="district" d="M250 280 L350 290 L380 340 L300 350 L220 320 Z"><title>서대문구</title></path>
+    <!-- 서초구 -->
+    <path id="seocho-gu" class="district" d="M500 580 L600 570 L650 620 L580 650 L500 620 Z"><title>서초구</title></path>
+    <!-- 성동구 -->
+    <path id="seongdong-gu" class="district" d="M500 400 L580 400 L600 450 L550 480 L480 450 Z"><title>성동구</title></path>
+    <!-- 성북구 -->
+    <path id="seongbuk-gu" class="district" d="M400 270 L480 270 L500 320 L450 350 L380 320 Z"><title>성북구</title></path>
+    <!-- 송파구 -->
+    <path id="songpa-gu" class="district" d="M700 500 L800 520 L820 570 L750 600 L680 560 Z"><title>송파구</title></path>
+    <!-- 양천구 -->
+    <path id="yangcheon-gu" class="district" d="M100 480 L200 490 L220 540 L150 560 L80 520 Z"><title>양천구</title></path>
+    <!-- 영등포구 -->
+    <path id="yeongdeungpo-gu" class="district" d="M250 500 L350 500 L380 550 L300 560 L220 530 Z"><title>영등포구</title></path>
+    <!-- 용산구 -->
+    <path id="yongsan-gu" class="district" d="M380 400 L450 400 L480 450 L400 480 L350 440 Z"><title>용산구</title></path>
+    <!-- 은평구 -->
+    <path id="eunpyeong-gu" class="district" d="M100 200 L250 220 L280 280 L180 300 L80 250 Z"><title>은평구</title></path>
+    <!-- 종로구 -->
+    <path id="jongno-gu" class="district" d="M350 200 L450 200 L480 270 L400 280 L320 250 Z"><title>종로구</title></path>
+    <!-- 중구 -->
+    <path id="jung-gu" class="district" d="M450 300 L500 300 L520 360 L480 380 L420 350 Z"><title>중구</title></path>
+    <!-- 중랑구 -->
+    <path id="jungnang-gu" class="district" d="M650 280 L750 280 L780 340 L700 370 L620 350 Z"><title>중랑구</title></path>
+    <!-- 강남구 -->
+    <path id="gangnam-gu" class="district" d="M600 500 L700 500 L700 580 L650 600 L580 550 Z"><title>강남구</title></path>
+    <!-- 강동구 -->
+    <path id="gangdong-gu" class="district" d="M800 450 L900 480 L950 550 L880 600 L800 570 Z"><title>강동구</title></path>
+    <!-- 강서구 -->
+    <path id="gangseo-gu" class="district" d="M0 450 L100 450 L100 520 L0 500 Z"><title>강서구</title></path>
+    <!-- 관악구 -->
+    <path id="gwanak-gu" class="district" d="M300 600 L380 610 L420 650 L350 680 L280 650 Z"><title>관악구</title></path>
+  </g>
+
+  <!-- 구 이름 텍스트 -->
+  <g id="district-names">
+    <text class="district-name" x="500" y="260">강북구</text>
+    <text class="district-name" x="740" y="430">광진구</text>
+    <text class="district-name" x="200" y="610">구로구</text>
+    <text class="district-name" x="250" y="670">금천구</text>
+    <text class="district-name" x="690" y="210">노원구</text>
+    <text class="district-name" x="550" y="200">도봉구</text>
+    <text class="district-name" x="580" y="340">동대문구</text>
+    <text class="district-name" x="400" y="580">동작구</text>
+    <text class="district-name" x="270" y="380">마포구</text>
+    <text class="district-name" x="300" y="300">서대문구</text>
+    <text class="district-name" x="570" y="610">서초구</text>
+    <text class="district-name" x="540" y="440">성동구</text>
+    <text class="district-name" x="430" y="300">성북구</text>
+    <text class="district-name" x="750" y="550">송파구</text>
+    <text class="district-name" x="150" y="520">양천구</text>
+    <text class="district-name" x="300" y="530">영등포구</text>
+    <text class="district-name" x="410" y="440">용산구</text>
+    <text class="district-name" x="180" y="250">은평구</text>
+    <text class="district-name" x="400" y="230">종로구</text>
+    <text class="district-name" x="470" y="340">중구</text>
+    <text class="district-name" x="700" y="320">중랑구</text>
+    <text class="district-name" x="650" y="540">강남구</text>
+    <text class="district-name" x="870" y="540">강동구</text>
+    <text class="district-name" x="50" y="480">강서구</text>
+    <text class="district-name" x="340" y="640">관악구</text>
+  </g>
+</svg>
