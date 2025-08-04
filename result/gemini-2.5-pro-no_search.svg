@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="750" viewBox="0 0 1000 750" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <title>서울 특별시 행정구역 지도</title>
+  <desc>한강을 포함한 서울 25개 구의 위치와 경계를 나타낸 지도</desc>
+
+  <style>
+    .district {
+      fill: #f4f4f4;
+      stroke: #555;
+      stroke-width: 1.5;
+      stroke-linejoin: round;
+      transition: fill 0.2s ease-in-out;
+    }
+    .district:hover {
+      fill: #e0e0e0;
+    }
+    .river {
+      fill: #aed6f1;
+      stroke: #85c1e9;
+      stroke-width: 1;
+    }
+    .label {
+      font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+      font-size: 14px;
+      text-anchor: middle;
+      fill: #333;
+      pointer-events: none; /* 텍스트 위로 마우스가 가도 구역 호버가 유지됨 */
+    }
+    .river-label {
+      font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      fill: #1a5276;
+      text-anchor: middle;
+      pointer-events: none;
+    }
+  </style>
+
+  <g id="map-container">
+    <!-- 한강 (Han River) -->
+    <path class="river" d="M990,380 C950,370 850,380 800,400 L750,420 C700,410 650,400 600,390 L550,380 C500,370 450,390 400,410 L350,430 C300,420 250,400 200,390 L100,380 C50,375 10,380 0,385 L0,435 C10,430 50,425 100,430 L200,440 C250,450 300,470 350,480 L400,460 C450,440 500,420 550,430 L600,440 C650,450 700,460 750,470 L800,450 C850,430 950,420 990,430 Z"/>
+
+    <!-- 강북 지역 (North of River) -->
+    <g id="gangbuk-districts">
+      <path id="gu-eunpyeong" class="district" d="M120,50 L120,180 L250,220 L280,100 L200,40 Z"/>
+      <path id="gu-seodaemun" class="district" d="M250,220 L280,100 L350,120 L360,250 L280,280 Z"/>
+      <path id="gu-mapo" class="district" d="M280,280 L360,250 L380,310 L350,430 L250,400 L200,340 Z"/>
+      <path id="gu-jongno" class="district" d="M280,100 L350,120 L360,250 L480,240 L500,100 L400,80 Z"/>
+      <path id="gu-jung" class="district" d="M360,250 L480,240 L500,310 L450,370 L380,310 Z"/>
+      <path id="gu-yongsan" class="district" d="M380,310 L450,370 L550,380 L500,420 L400,410 L350,430 Z"/>
+      <path id="gu-seongbuk" class="district" d="M400,80 L500,100 L480,240 L550,230 L620,120 L520,60 Z"/>
+      <path id="gu-gangbuk" class="district" d="M520,60 L620,120 L650,80 L580,20 Z"/>
+      <path id="gu-dobong" class="district" d="M580,20 L650,80 L720,50 L680,5 Z"/>
+      <path id="gu-nowon" class="district" d="M680,5 L720,50 L780,100 L850,120 L820,30 L750,10 Z"/>
+      <path id="gu-jungnang" class="district" d="M780,100 L850,120 L880,250 L800,280 L750,200 Z"/>
+      <path id="gu-dongdaemun" class="district" d="M550,230 L650,260 L750,200 L800,280 L680,320 L580,290 Z"/>
+      <path id="gu-seongdong" class="district" d="M500,310 L580,290 L680,320 L650,390 L550,380 Z"/>
+      <path id="gu-gwangjin" class="district" d="M680,320 L800,280 L880,250 L900,380 L750,420 L650,390 Z"/>
+    </g>
+
+    <!-- 강남 지역 (South of River) -->
+    <g id="gangnam-districts">
+      <path id="gu-gangseo" class="district" d="M10,385 L100,380 L200,390 L180,550 L80,580 L20,500 Z"/>
+      <path id="gu-yangcheon" class="district" d="M180,550 L200,390 L250,400 L280,480 L220,560 Z"/>
+      <path id="gu-guro" class="district" d="M180,550 L220,560 L280,480 L320,500 L300,600 L200,620 Z"/>
+      <path id="gu-geumcheon" class="district" d="M200,620 L300,600 L320,680 L250,700 Z"/>
+      <path id="gu-yeongdeungpo" class="district" d="M250,400 L350,430 L400,460 L420,520 L320,500 L280,480 Z"/>
+      <path id="gu-dongjak" class="district" d="M420,520 L400,460 L500,420 L530,480 L450,550 Z"/>
+      <path id="gu-gwanak" class="district" d="M320,500 L450,550 L430,650 L320,680 Z"/>
+      <path id="gu-seocho" class="district" d="M530,480 L500,420 L550,430 L600,440 L680,480 L650,650 L450,550 Z"/>
+      <path id="gu-gangnam" class="district" d="M680,480 L600,440 L750,470 L800,450 L850,580 L700,600 Z"/>
+      <path id="gu-songpa" class="district" d="M850,580 L800,450 C850,430 950,420 990,430 L970,550 Z"/>
+      <path id="gu-gangdong" class="district" d="M990,380 C950,370 850,380 800,400 L750,420 L750,470 L800,450 C850,430 950,420 990,430 L999,400 Z"/>
+    </g>
+
+    <!-- 텍스트 레이블 (Labels) -->
+    <g id="labels">
+      <text x="500" y="360" class="river-label">한  강</text>
+      <!-- 강북 레이블 -->
+      <text x="185" y="135" class="label">은평구</text>
+      <text x="305" y="195" class="label">서대문구</text>
+      <text x="290" y="350" class="label">마포구</text>
+      <text x="410" y="170" class="label">종로구</text>
+      <text x="430" y="300" class="label">중구</text>
+      <text x="460" y="390" class="label">용산구</text>
+      <text x="540" y="150" class="label">성북구</text>
+      <text x="600" y="65" class="label">강북구</text>
+      <text x="660" y="35" class="label">도봉구</text>
+      <text x="760" y="60" class="label">노원구</text>
+      <text x="820" y="200" class="label">중랑구</text>
+      <text x="660" y="260" class="label">동대문구</text>
+      <text x="590" y="340" class="label">성동구</text>
+      <text x="780" y="350" class="label">광진구</text>
+      <!-- 강남 레이블 -->
+      <text x="100" y="480" class="label">강서구</text>
+      <text x="230" y="500" class="label">양천구</text>
+      <text x="250" y="580" class="label">구로구</text>
+      <text x="270" y="660" class="label">금천구</text>
+      <text x="330" y="460" class="label">영등포구</text>
+      <text x="470" y="510" class="label">동작구</text>
+      <text x="380" y="600" class="label">관악구</text>
+      <text x="590" y="550" class="label">서초구</text>
+      <text x="760" y="520" class="label">강남구</text>
+      <text x="910" y="500" class="label">송파구</text>
+      <text x="880" y="410" class="label">강동구</text>
+    </g>
+  </g>
+</svg>

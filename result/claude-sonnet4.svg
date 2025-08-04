@@ -1,0 +1,151 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 한강 (Han River) -->
+  <path d="M50 350 Q150 340 250 330 Q350 320 450 315 Q550 310 650 305 Q720 300 780 295" 
+        stroke="#4A90E2" stroke-width="12" fill="none" opacity="0.8"/>
+  <path d="M60 365 Q160 355 260 345 Q360 335 460 330 Q560 325 660 320 Q730 315 790 310" 
+        stroke="#4A90E2" stroke-width="8" fill="none" opacity="0.6"/>
+  
+  <!-- 강북 지역 (North of Han River) -->
+  
+  <!-- 종로구 (Jongno-gu) -->
+  <polygon points="320,200 380,180 420,220 380,260 320,240" fill="#FFE6E6" stroke="#333" stroke-width="1"/>
+  <text x="360" y="220" text-anchor="middle" font-size="12" font-family="Arial">종로구</text>
+  
+  <!-- 중구 (Jung-gu) -->
+  <polygon points="380,180 450,170 480,210 420,220 380,180" fill="#E6F3FF" stroke="#333" stroke-width="1"/>
+  <text x="430" y="195" text-anchor="middle" font-size="12" font-family="Arial">중구</text>
+  
+  <!-- 용산구 (Yongsan-gu) -->
+  <polygon points="380,260 420,220 480,210 520,250 480,290 380,260" fill="#E6FFE6" stroke="#333" stroke-width="1"/>
+  <text x="440" y="250" text-anchor="middle" font-size="12" font-family="Arial">용산구</text>
+  
+  <!-- 성동구 (Seongdong-gu) -->
+  <polygon points="520,250 580,230 620,270 580,310 520,250" fill="#FFFFE6" stroke="#333" stroke-width="1"/>
+  <text x="570" y="265" text-anchor="middle" font-size="12" font-family="Arial">성동구</text>
+  
+  <!-- 광진구 (Gwangjin-gu) -->
+  <polygon points="620,270 680,250 720,290 680,320 620,270" fill="#F0E6FF" stroke="#333" stroke-width="1"/>
+  <text x="670" y="285" text-anchor="middle" font-size="12" font-family="Arial">광진구</text>
+  
+  <!-- 동대문구 (Dongdaemun-gu) -->
+  <polygon points="480,170 550,150 590,190 550,230 480,170" fill="#FFE6F0" stroke="#333" stroke-width="1"/>
+  <text x="535" y="185" text-anchor="middle" font-size="11" font-family="Arial">동대문구</text>
+  
+  <!-- 중랑구 (Jungnang-gu) -->
+  <polygon points="590,190 650,170 690,210 650,240 590,190" fill="#E6FFD0" stroke="#333" stroke-width="1"/>
+  <text x="635" y="205" text-anchor="middle" font-size="12" font-family="Arial">중랑구</text>
+  
+  <!-- 성북구 (Seongbuk-gu) -->
+  <polygon points="420,120 480,100 520,140 480,170 420,120" fill="#D0E6FF" stroke="#333" stroke-width="1"/>
+  <text x="460" y="135" text-anchor="middle" font-size="12" font-family="Arial">성북구</text>
+  
+  <!-- 강북구 (Gangbuk-gu) -->
+  <polygon points="360,100 420,80 460,120 420,140 360,100" fill="#FFD0E6" stroke="#333" stroke-width="1"/>
+  <text x="410" y="110" text-anchor="middle" font-size="12" font-family="Arial">강북구</text>
+  
+  <!-- 도봉구 (Dobong-gu) -->
+  <polygon points="420,60 480,40 520,80 480,100 420,60" fill="#E6D0FF" stroke="#333" stroke-width="1"/>
+  <text x="460" y="70" text-anchor="middle" font-size="12" font-family="Arial">도봉구</text>
+  
+  <!-- 노원구 (Nowon-gu) -->
+  <polygon points="520,40 580,20 620,60 580,90 520,40" fill="#D0FFE6" stroke="#333" stroke-width="1"/>
+  <text x="570" y="55" text-anchor="middle" font-size="12" font-family="Arial">노원구</text>
+  
+  <!-- 은평구 (Eunpyeong-gu) -->
+  <polygon points="260,120 320,100 360,140 320,170 260,120" fill="#FFFFD0" stroke="#333" stroke-width="1"/>
+  <text x="310" y="135" text-anchor="middle" font-size="12" font-family="Arial">은평구</text>
+  
+  <!-- 서대문구 (Seodaemun-gu) -->
+  <polygon points="320,140 380,120 420,160 380,180 320,140" fill="#F0FFD0" stroke="#333" stroke-width="1"/>
+  <text x="365" y="150" text-anchor="middle" font-size="11" font-family="Arial">서대문구</text>
+  
+  <!-- 마포구 (Mapo-gu) -->
+  <polygon points="260,200 320,180 360,220 320,260 260,200" fill="#D0F0FF" stroke="#333" stroke-width="1"/>
+  <text x="310" y="220" text-anchor="middle" font-size="12" font-family="Arial">마포구</text>
+  
+  <!-- 강남 지역 (South of Han River) -->
+  
+  <!-- 양천구 (Yangcheon-gu) -->
+  <polygon points="150,380 210,360 250,400 210,440 150,380" fill="#FFE6CC" stroke="#333" stroke-width="1"/>
+  <text x="200" y="400" text-anchor="middle" font-size="12" font-family="Arial">양천구</text>
+  
+  <!-- 강서구 (Gangseo-gu) -->
+  <polygon points="50,360 150,340 190,380 150,420 50,360" fill="#CCE6FF" stroke="#333" stroke-width="1"/>
+  <text x="120" y="380" text-anchor="middle" font-size="12" font-family="Arial">강서구</text>
+  
+  <!-- 구로구 (Guro-gu) -->
+  <polygon points="190,420 250,400 290,440 250,480 190,420" fill="#E6CCFF" stroke="#333" stroke-width="1"/>
+  <text x="240" y="440" text-anchor="middle" font-size="12" font-family="Arial">구로구</text>
+  
+  <!-- 금천구 (Geumcheon-gu) -->
+  <polygon points="250,480 310,460 350,500 310,530 250,480" fill="#CCFFE6" stroke="#333" stroke-width="1"/>
+  <text x="300" y="495" text-anchor="middle" font-size="12" font-family="Arial">금천구</text>
+  
+  <!-- 영등포구 (Yeongdeungpo-gu) -->
+  <polygon points="250,360 310,340 350,380 310,420 250,360" fill="#FFFFCC" stroke="#333" stroke-width="1"/>
+  <text x="295" y="380" text-anchor="middle" font-size="11" font-family="Arial">영등포구</text>
+  
+  <!-- 동작구 (Dongjak-gu) -->
+  <polygon points="350,380 410,360 450,400 410,440 350,380" fill="#FFCCCC" stroke="#333" stroke-width="1"/>
+  <text x="400" y="400" text-anchor="middle" font-size="12" font-family="Arial">동작구</text>
+  
+  <!-- 관악구 (Gwanak-gu) -->
+  <polygon points="350,440 410,420 450,460 410,500 350,440" fill="#CCFFCC" stroke="#333" stroke-width="1"/>
+  <text x="400" y="460" text-anchor="middle" font-size="12" font-family="Arial">관악구</text>
+  
+  <!-- 서초구 (Seocho-gu) -->
+  <polygon points="450,400 510,380 550,420 510,460 450,400" fill="#FFCCF0" stroke="#333" stroke-width="1"/>
+  <text x="500" y="420" text-anchor="middle" font-size="12" font-family="Arial">서초구</text>
+  
+  <!-- 강남구 (Gangnam-gu) -->
+  <polygon points="550,380 610,360 650,400 610,440 550,380" fill="#F0CCFF" stroke="#333" stroke-width="1"/>
+  <text x="600" y="400" text-anchor="middle" font-size="12" font-family="Arial">강남구</text>
+  
+  <!-- 송파구 (Songpa-gu) -->
+  <polygon points="650,360 710,340 750,380 710,420 650,360" fill="#CCCCFF" stroke="#333" stroke-width="1"/>
+  <text x="700" y="380" text-anchor="middle" font-size="12" font-family="Arial">송파구</text>
+  
+  <!-- 강동구 (Gangdong-gu) -->
+  <polygon points="710,380 770,360 800,400 770,440 710,380" fill="#FFCCDD" stroke="#333" stroke-width="1"/>
+  <text x="755" y="400" text-anchor="middle" font-size="12" font-family="Arial">강동구</text>
+  
+  <!-- 주요 산 표시 -->
+  <!-- 남산 -->
+  <circle cx="440" cy="240" r="8" fill="#90EE90" stroke="#228B22" stroke-width="2"/>
+  <text x="455" y="245" font-size="10" font-family="Arial">남산</text>
+  
+  <!-- 북한산 -->
+  <polygon points="350,80 370,60 390,80 380,100 360,100" fill="#90EE90" stroke="#228B22" stroke-width="2"/>
+  <text x="375" y="85" text-anchor="middle" font-size="10" font-family="Arial">북한산</text>
+  
+  <!-- 관악산 -->
+  <polygon points="380,480 400,460 420,480 410,500 390,500" fill="#90EE90" stroke="#228B22" stroke-width="2"/>
+  <text x="405" y="485" text-anchor="middle" font-size="10" font-family="Arial">관악산</text>
+  
+  <!-- 제목 -->
+  <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold" font-family="Arial">서울특별시 행정구역도</text>
+  
+  <!-- 범례 -->
+  <g transform="translate(50,520)">
+    <rect x="0" y="0" width="200" height="70" fill="white" stroke="#333" stroke-width="1" opacity="0.9"/>
+    <text x="10" y="15" font-size="12" font-weight="bold" font-family="Arial">범례</text>
+    <line x1="10" y1="25" x2="30" y2="25" stroke="#4A90E2" stroke-width="8"/>
+    <text x="35" y="30" font-size="10" font-family="Arial">한강</text>
+    <rect x="10" y="35" width="15" height="10" fill="#90EE90" stroke="#228B22"/>
+    <text x="30" y="45" font-size="10" font-family="Arial">산/공원</text>
+    <rect x="10" y="50" width="15" height="10" fill="#FFE6E6" stroke="#333"/>
+    <text x="30" y="60" font-size="10" font-family="Arial">행정구역</text>
+  </g>
+  
+  <!-- 나침반 -->
+  <g transform="translate(720,80)">
+    <circle cx="0" cy="0" r="25" fill="white" stroke="#333" stroke-width="2"/>
+    <line x1="0" y1="-20" x2="0" y2="20" stroke="#333" stroke-width="1"/>
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#333" stroke-width="1"/>
+    <polygon points="0,-20 -5,-10 5,-10" fill="red"/>
+    <text x="0" y="-30" text-anchor="middle" font-size="12" font-weight="bold">N</text>
+  </g>
+</svg>

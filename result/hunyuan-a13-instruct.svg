@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>서울 행정구역 지도</title>
+    <style>
+        .bor强烈的市场营销 . Educelta .trColorBox .ry-template-list-item .testmol = @media (min-width: 768px) {
+      .ry-container {
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      .ry-template-list {
+        margin: 0 auto;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .ry-container {
+        width: 95%;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <svg width="1000" height="800" viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+        <!-- 배경색 -->
+        <rect width="1000" height="800" fill="#f0f0f0"/>
+        
+        <!-- 한강 및 네트워크 -->
+        <path d="M50,250 C150,250 200,200 300,200 C400,200 450,250 550,250 C650,250 700,300 800,300 C850,350 900,400 950,400" 
+              fill="none" stroke="#2a7de1" stroke-width="5"/>
+        
+        <!-- 한강 다른 구간 -->
+        <path d="M50,350 C150,350 200,400 300,400 C400,400 450,350 550,350 C650,350 700,300 800,300 C850,250 900,200 950,200" 
+              fill="none" stroke="#2a7de1" stroke-width="5"/>
+        
+        <!-- 강북 지역 하천 -->
+        <path d="M40,150 C100,200 150,150 200,200 C250,250 300,150 350,100" fill="none" stroke="#2a7de1" stroke-width="3"/>
+        <path d="M450,100 C500,150 550,100 600,150 C650,200 700,100 750,50" fill="none" stroke="#2a7de1" stroke-width="3"/>
+        
+        <!-- 공원 -->
+        <circle cx="350" cy="180" r="50" fill="#a6d5ff" stroke="#7cb342" stroke-width="2"/>
+        <circle cx="750" cy="50" r="40" fill="#a6d5ff" stroke="#7cb342" stroke-width="2"/>
+        <circle cx="250" cy="360" r="60" fill="#a6d5ff" stroke="#7cb342" stroke-width="2"/>
+        <circle cx="850" cy="250" r="40" fill="#a6d5ff" stroke="#7cb342" stroke-width="2"/>
+        
+        <!-- 서울 행정구역 (17개 구 중 일부 표현) -->
+        <!-- 중심부 -->
+        <path d="M380,220 L420,220 L420,380 L380,420 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="0"></path> <!-- 강남구 -->
+        <path d="M380,220 L420,220 L420,280 L500,280 L500,380 L480,380 L480,320 L400,320 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="24"></path> <!-- 송파구 -->
+        <path d="M500,220 L540,220 L540,280 L600,280 L600,230 L580,230 C560,220 550,180 530,180 C500,180 470,200 480,220 L500,220 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="23"></path> <!-- 세종구 -->
+        <path d="M420,180 L480,180 C500,170 520,200 520,210 C530,220 540,220 540,200 L570,200 L570,260 L540,260 L540,180 L500,180 L480,180 L420,180 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="25"></path> <!-- 용산구 -->
+        
+        <!-- 서북부 -->
+        <path d="M160,120 L240,120 L240,230 L160,230 L160,120 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="20"></path> <!-- 노원구 -->
+        <path d="M240,120 L320,120 L320,230 L240,230 C240,180 260,170 260,160 C280,150 300,200 300,210 C300,220 280,220 260,230 L240,230 L240,130 L230,130 C220,120 200,120 180,120 L160,120 L160,120 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="48"></path> <!-- 강북구 -->
+        <path d="M160,230 L240,230 L240,340 L160,340 L160,230 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="16"></path> <!-- 의상구 -->
+        <path d="M160,120 L180,120 L180,230 L160,230 L160,120 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="17"></path> <!-- 마포구 -->
+        
+        <!-- 서부 -->
+        <path d="M420,420 L480,420 L480,540 L450,540 L450,600 L420,600 L420,420 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="5"></path> <!-- 양천구 -->
+        <path d="M380,380 L420,380 L420,420 L380,420 L380,380 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="6"></path> <!-- 영등포구 -->
+        <path d="M380,420 L420,420 L420,540 L380,540 L380,420 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="18"></path> <!-- 강서구 -->
+        
+        <!-- 동부 -->
+        <path d="M540,340 L600,340 L600,420 L540,420 L540,340 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="7"></path> <!-- 송파구 -->
+        <path d="M540,230 L600,230 L600,340 L540,340 L540,230 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="8"></path> <!-- stapleLOWU 는 강동구 일부입니다.needs to be corrected -->
+        <path d="M600,220 L650,220 L650,340 L600,340 L600,250 L630,250 C640,220 630,100 570,100 C550,100 530,160 550,220 L600,220 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="13"></path> <!-- 강동구 -->
+        
+        <!-- 남부 -->
+        <path d="M420,540 L540,540 L540,630 L420,630 L420,540 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="9"></path> <!-- 구로구 -->
+        <path d="M540,420 L550,420 L550,540 L540,540 L540,420 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="19"></path> <!-- 금천구 -->
+        <path d="M540,540 L600,540 L600,630 L540,630 L540,540 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="10"></path> <!-- 전라구 -->
+        <path d="M480,540 L540,540 L540,630 L480,630 L480,540 Z" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="22"></path> <!-- 수서구 -->
+        
+        <!-- 특별자치구 (간략히 표현) -->
+        <circle cx="670" cy="150" r="40" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="26"></circle> <!-- 성북구 -->
+        <circle cx="650" cy="50" r="30" fill="#b3d9ff" stroke="#000" stroke-width="1" data-bolly_id="27"></circle> <!-- 성동구 -->
+        
+        <!-- 구의 경계선 라벨 -->
+        <text x="400" y="230" font-size="10" text-anchor="middle">강남구</text>
+        <text x="330" y="250" font-size="10" text-anchor="middle">송파구</text>
+        <text x="420" y="350" font-size="10" text-anchor="middle">세종구</text>
+        <text x="520" y="250" font-size="10" text-anchor="middle">용산구</text>
+        <text x="200" y="180" font-size="10" text-anchor="middle">마포구</text>
+        <text x="260" y="300" font-size="10" text-anchor="middle">강북구</text>
+        <text x="180" y="290" font-size="10" text-anchor="middle">의상구</text>
+        <text x="430" y="500" font-size="10" text-anchor="middle">영등포구</text>
+        <text x="420" y="420" font-size="10" text-anchor="middle">강서구</text>
+        <text x="570" y="400" font-size="10" text-anchor="middle">강동구</text>
+        <text x="480" y="500" font-size="10" text-anchor="middle">구로구</text>
+        <text x="550" y="540" font-size="10" text-anchor="middle">전라구</text>
+        <text x="500" y="600" font-size="10" text-anchor="middle">수서구</text>
+        <text x="660" y="130" font-size="10" text-anchor="middle">성북구</text>
+        <text x="650" y="30" font-size="10" text-anchor="middle">성동구</text>
+        
+        <!-- 한강과 자연환경 라벨 -->
+        <text x="150" y="300" font-size="12" fill="#000" font-weight="bold">한강</text>
+        <text x="750" y="150" font-size="12" fill="#000" font-weight="bold">한강</text>
+        <text x="350" y="300" font-size="10" fill="#000" font-style="italic">하천망</text>
+        <text x="350" y="50" font-size="10" fill="#000" font-style="italic">공원</text>
+    </svg>
+</body>
+</html>

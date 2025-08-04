@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif; background: #f0f8ff;">
+  <!-- 한강 (파란색) -->
+  <path d="M50,300 C200,280 400,300 600,280 L600,320 C400,340 200,320 50,340 Z" fill="#66CCFF" stroke="#0000AA" stroke-width="1" />
+
+  <!-- 북서 지역 (Mapo, Gangseo 등) -->
+  <polygon points="50,100 200,100 250,200 200,280 50,280" fill="#FFD700" stroke="#333" stroke-width="0.5" />
+  <text x="125" y="190" text-anchor="middle" fill="#000" font-size="10">Mapo</text>
+  
+  <polygon points="50,280 200,280 200,350 100,350 50,320" fill="#FFA07A" stroke="#333" stroke-width="0.5" />
+  <text x="125" y="310" text-anchor="middle" fill="#000" font-size="10">Gangseo</text>
+  
+  <polygon points="200,100 300,100 300,200 250,280 200,280" fill="#98FB98" stroke="#333" stroke-width="0.5" />
+  <text x="250" y="190" text-anchor="middle" fill="#000" font-size="10">Seodaemun</text>
+
+  <!-- 중앙 (Jongno, Jung 등) -->
+  <polygon points="250,150 350,150 350,250 250,250" fill="#FFB6C1" stroke="#333" stroke-width="0.5" />
+  <text x="300" y="200" text-anchor="middle" fill="#000" font-size="10">Jongno</text>
+  
+  <polygon points="300,250 400,250 400,280 300,280" fill="#ADD8E6" stroke="#333" stroke-width="0.5" />
+  <text x="350" y="265" text-anchor="middle" fill="#000" font-size="10">Yongsan</text>
+  
+  <polygon points="350,150 450,150 450,250 350,250" fill="#E0FFFF" stroke="#333" stroke-width="0.5" />
+  <text x="400" y="200" text-anchor="middle" fill="#000" font-size="10">Jung</text>
+
+  <!-- 동북 지역 (Seongbuk, Nowon 등) -->
+  <polygon points="350,100 500,100 500,200 450,250 350,250" fill="#DDA0DD" stroke="#333" stroke-width="0.5" />
+  <text x="425" y="180" text-anchor="middle" fill="#000" font-size="10">Seongbuk</text>
+  
+  <polygon points="500,50 650,50 650,150 550,200 500,200" fill="#FFA500" stroke="#333" stroke-width="0.5" />
+  <text x="575" y="120" text-anchor="middle" fill="#000" font-size="10">Nowon</text>
+  
+  <polygon points="450,200 550,200 550,280 450,280" fill="#F0E68C" stroke="#333" stroke-width="0.5" />
+  <text x="500" y="240" text-anchor="middle" fill="#000" font-size="10">Dongdaemun</text>
+
+  <!-- 서남 지역 (Yeongdeungpo, Guro 등) -->
+  <polygon points="200,350 350,350 350,400 250,450 200,450" fill="#90EE90" stroke="#333" stroke-width="0.5" />
+  <text x="275" y="400" text-anchor="middle" fill="#000" font-size="10">Yeongdeungpo</text>
+  
+  <polygon points="200,450 300,450 300,500 200,500" fill="#FFC0CB" stroke="#333" stroke-width="0.5" />
+  <text x="250" y="475" text-anchor="middle" fill="#000" font-size="10">Guro</text>
+
+  <!-- 남동 지역 (Gangnam, Songpa 등) -->
+  <polygon points="400,350 500,350 500,400 400,400" fill="#87CEFA" stroke="#333" stroke-width="0.5" />
+  <text x="450" y="375" text-anchor="middle" fill="#000" font-size="10">Gangnam</text>
+  
+  <polygon points="500,320 600,320 600,400 500,400" fill="#BA55D3" stroke="#333" stroke-width="0.5" />
+  <text x="550" y="360" text-anchor="middle" fill="#000" font-size="10">Songpa</text>
+  
+  <polygon points="450,280 550,280 550,350 450,350" fill="#20B2AA" stroke="#333" stroke-width="0.5" />
+  <text x="500" y="315" text-anchor="middle" fill="#000" font-size="10">Seocho</text>
+
+  <!-- 기타 구 (약식 표기) -->
+  <polygon points="300,350 400,350 400,400 300,400" fill="#FF4500" stroke="#333" stroke-width="0.5" />
+  <text x="350" y="375" text-anchor="middle" fill="white" font-size="9">Dongjak</text>
+  
+  <polygon points="550,200 650,200 650,280 550,280" fill="#4682B4" stroke="#333" stroke-width="0.5" />
+  <text x="600" y="240" text-anchor="middle" fill="white" font-size="9">Gwangjin</text>
+
+  <!-- 제목 -->
+  <text x="400" y="50" text-anchor="middle" font-weight="bold" font-size="18">서울특별시 개략 지도</text>
+  <text x="400" y="75" text-anchor="middle" font-style="italic" font-size="12">(한강 및 25개 구 위치 개략도)</text>
+</svg>

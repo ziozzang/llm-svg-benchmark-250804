@@ -1,0 +1,45 @@
+<svg width="1000" height="800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <!-- 배경 -->
+  <rect width="1000" height="800" fill="#f0f0f0"/>
+
+  <!-- 한강 -->
+  <path d="M 100 400 C 300 420, 700 380, 900 400" stroke="#4DA6FF" stroke-width="20" fill="none" />
+
+  <!-- 북한산 (상단 왼쪽) -->
+  <circle cx="150" cy="150" r="60" fill="#669966" />
+
+  <!-- 구역들 (단순 도형, 대략 위치) -->
+  <!-- 북부 구 -->
+  <rect x="100" y="100" width="100" height="100" fill="#cccccc" stroke="#000" /><text x="115" y="160" font-size="14">도봉구</text>
+  <rect x="200" y="120" width="100" height="90" fill="#dddddd" stroke="#000" /><text x="215" y="170" font-size="14">노원구</text>
+  <rect x="150" y="200" width="100" height="80" fill="#cccccc" stroke="#000" /><text x="165" y="250" font-size="14">강북구</text>
+  <rect x="250" y="220" width="100" height="70" fill="#dddddd" stroke="#000" /><text x="265" y="260" font-size="14">성북구</text>
+  <rect x="350" y="230" width="90" height="60" fill="#cccccc" stroke="#000" /><text x="360" y="260" font-size="14">동대문구</text>
+  <rect x="450" y="240" width="100" height="60" fill="#dddddd" stroke="#000" /><text x="465" y="270" font-size="14">중랑구</text>
+
+  <!-- 중심부 구 -->
+  <rect x="300" y="300" width="80" height="60" fill="#cccccc" stroke="#000" /><text x="310" y="335" font-size="14">종로구</text>
+  <rect x="380" y="320" width="80" height="50" fill="#dddddd" stroke="#000" /><text x="390" y="350" font-size="14">중구</text>
+  <rect x="460" y="310" width="80" height="60" fill="#cccccc" stroke="#000" /><text x="470" y="340" font-size="14">용산구</text>
+
+  <!-- 동남부 구 -->
+  <rect x="600" y="320" width="90" height="60" fill="#dddddd" stroke="#000" /><text x="615" y="355" font-size="14">강남구</text>
+  <rect x="690" y="310" width="90" height="60" fill="#cccccc" stroke="#000" /><text x="705" y="340" font-size="14">서초구</text>
+  <rect x="690" y="370" width="90" height="60" fill="#dddddd" stroke="#000" /><text x="705" y="400" font-size="14">송파구</text>
+  <rect x="780" y="360" width="90" height="60" fill="#cccccc" stroke="#000" /><text x="795" y="390" font-size="14">강동구</text>
+
+  <!-- 남부 구 -->
+  <rect x="600" y="400" width="80" height="60" fill="#cccccc" stroke="#000" /><text x="615" y="430" font-size="14">관악구</text>
+  <rect x="520" y="420" width="80" height="60" fill="#dddddd" stroke="#000" /><text x="535" y="450" font-size="14">동작구</text>
+  <rect x="440" y="420" width="80" height="60" fill="#cccccc" stroke="#000" /><text x="455" y="450" font-size="14">영등포구</text>
+  <rect x="360" y="420" width="80" height="60" fill="#dddddd" stroke="#000" /><text x="375" y="450" font-size="14">구로구</text>
+  <rect x="280" y="420" width="80" height="60" fill="#cccccc" stroke="#000" /><text x="295" y="450" font-size="14">금천구</text>
+  <rect x="200" y="420" width="80" height="60" fill="#dddddd" stroke="#000" /><text x="215" y="450" font-size="14">양천구</text>
+  <rect x="120" y="420" width="80" height="60" fill="#cccccc" stroke="#000" /><text x="135" y="450" font-size="14">강서구</text>
+
+  <!-- 기타 동부 구 -->
+  <rect x="550" y="300" width="80" height="50" fill="#cccccc" stroke="#000" /><text x="565" y="330" font-size="14">성동구</text>
+  <rect x="550" y="260" width="80" height="40" fill="#dddddd" stroke="#000" /><text x="565" y="285" font-size="14">광진구</text>
+
+</svg>
+
