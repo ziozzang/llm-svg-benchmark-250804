@@ -1,0 +1,142 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect width="800" height="600" fill="#f5f5f0"/>
+  
+  <!-- 한강 -->
+  <path d="M 50 320 Q 120 310, 200 315 T 350 330 Q 450 340, 550 335 T 700 340 L 750 345 L 750 380 Q 650 375, 550 380 T 350 375 Q 250 370, 150 375 L 50 370 Z" fill="#4a90e2" opacity="0.7"/>
+  
+  <!-- 한강 지류 -->
+  <path d="M 280 330 L 285 280 Q 290 250, 295 220" stroke="#4a90e2" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M 450 340 L 455 290 Q 460 260, 465 230" stroke="#4a90e2" stroke-width="3" fill="none" opacity="0.5"/>
+  
+  <!-- 여의도 -->
+  <ellipse cx="220" cy="350" rx="35" ry="20" fill="#d4e4d4" stroke="#666" stroke-width="1"/>
+  
+  <!-- 북한산 -->
+  <path d="M 180 50 L 220 30 L 260 45 L 280 35 L 300 55 L 250 80 L 200 75 Z" fill="#8fbc8f" opacity="0.6"/>
+  
+  <!-- 남산 -->
+  <circle cx="380" cy="280" r="25" fill="#90a890" opacity="0.5"/>
+  
+  <!-- 관악산 -->
+  <path d="M 320 520 L 360 500 L 400 515 L 380 540 L 340 535 Z" fill="#8fbc8f" opacity="0.6"/>
+  
+  <!-- 구 경계선 및 이름 -->
+  
+  <!-- 종로구 -->
+  <path d="M 340 240 L 380 235 L 410 250 L 405 280 L 380 290 L 350 285 L 340 260 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="375" y="265" font-size="11" text-anchor="middle" font-weight="bold">종로구</text>
+  
+  <!-- 중구 -->
+  <path d="M 380 290 L 410 285 L 420 310 L 400 320 L 370 315 L 365 295 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="392" y="305" font-size="11" text-anchor="middle" font-weight="bold">중구</text>
+  
+  <!-- 용산구 -->
+  <path d="M 340 315 L 400 320 L 410 350 L 380 365 L 330 355 L 325 330 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="365" y="340" font-size="11" text-anchor="middle" font-weight="bold">용산구</text>
+  
+  <!-- 성동구 -->
+  <path d="M 420 310 L 470 305 L 480 340 L 450 350 L 410 345 L 415 320 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="445" y="330" font-size="11" text-anchor="middle" font-weight="bold">성동구</text>
+  
+  <!-- 광진구 -->
+  <path d="M 480 305 L 530 300 L 540 335 L 510 345 L 475 340 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="507" y="325" font-size="11" text-anchor="middle" font-weight="bold">광진구</text>
+  
+  <!-- 동대문구 -->
+  <path d="M 410 250 L 460 245 L 470 280 L 440 290 L 405 285 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="437" y="270" font-size="10" text-anchor="middle" font-weight="bold">동대문구</text>
+  
+  <!-- 중랑구 -->
+  <path d="M 470 245 L 520 240 L 530 280 L 500 290 L 465 285 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="497" y="265" font-size="11" text-anchor="middle" font-weight="bold">중랑구</text>
+  
+  <!-- 성북구 -->
+  <path d="M 380 190 L 430 185 L 440 235 L 410 245 L 375 240 L 370 210 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="405" y="215" font-size="11" text-anchor="middle" font-weight="bold">성북구</text>
+  
+  <!-- 강북구 -->
+  <path d="M 340 140 L 390 135 L 400 185 L 370 195 L 335 190 L 330 160 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="365" y="165" font-size="11" text-anchor="middle" font-weight="bold">강북구</text>
+  
+  <!-- 도봉구 -->
+  <path d="M 400 90 L 450 85 L 460 135 L 430 145 L 395 140 L 390 110 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="425" y="115" font-size="11" text-anchor="middle" font-weight="bold">도봉구</text>
+  
+  <!-- 노원구 -->
+  <path d="M 460 135 L 510 130 L 520 180 L 490 190 L 455 185 L 450 155 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="485" y="160" font-size="11" text-anchor="middle" font-weight="bold">노원구</text>
+  
+  <!-- 은평구 -->
+  <path d="M 240 160 L 290 155 L 300 205 L 270 215 L 235 210 L 230 180 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="265" y="185" font-size="11" text-anchor="middle" font-weight="bold">은평구</text>
+  
+  <!-- 서대문구 -->
+  <path d="M 290 210 L 340 205 L 350 255 L 320 265 L 285 260 L 280 230 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="315" y="235" font-size="10" text-anchor="middle" font-weight="bold">서대문구</text>
+  
+  <!-- 마포구 -->
+  <path d="M 240 260 L 290 255 L 300 305 L 270 315 L 235 310 L 230 280 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="265" y="285" font-size="11" text-anchor="middle" font-weight="bold">마포구</text>
+  
+  <!-- 양천구 -->
+  <path d="M 140 350 L 190 345 L 200 395 L 170 405 L 135 400 L 130 370 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="165" y="375" font-size="11" text-anchor="middle" font-weight="bold">양천구</text>
+  
+  <!-- 강서구 -->
+  <path d="M 50 320 L 130 315 L 140 380 L 90 390 L 45 385 L 40 340 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="90" y="355" font-size="11" text-anchor="middle" font-weight="bold">강서구</text>
+  
+  <!-- 구로구 -->
+  <path d="M 140 400 L 190 395 L 200 445 L 170 455 L 135 450 L 130 420 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="165" y="425" font-size="11" text-anchor="middle" font-weight="bold">구로구</text>
+  
+  <!-- 금천구 -->
+  <path d="M 200 445 L 250 440 L 260 490 L 230 500 L 195 495 L 190 465 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="225" y="470" font-size="11" text-anchor="middle" font-weight="bold">금천구</text>
+  
+  <!-- 영등포구 -->
+  <path d="M 200 350 L 270 345 L 280 395 L 250 405 L 195 400 L 190 370 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="235" y="375" font-size="10" text-anchor="middle" font-weight="bold">영등포구</text>
+  
+  <!-- 동작구 -->
+  <path d="M 280 380 L 330 375 L 340 425 L 310 435 L 275 430 L 270 400 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="305" y="405" font-size="11" text-anchor="middle" font-weight="bold">동작구</text>
+  
+  <!-- 관악구 -->
+  <path d="M 260 450 L 340 445 L 350 510 L 300 520 L 255 515 L 250 480 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="300" y="485" font-size="11" text-anchor="middle" font-weight="bold">관악구</text>
+  
+  <!-- 서초구 -->
+  <path d="M 350 380 L 430 375 L 440 450 L 390 460 L 345 455 L 340 410 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="390" y="420" font-size="11" text-anchor="middle" font-weight="bold">서초구</text>
+  
+  <!-- 강남구 -->
+  <path d="M 440 380 L 520 375 L 530 450 L 480 460 L 435 455 L 430 410 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="480" y="420" font-size="11" text-anchor="middle" font-weight="bold">강남구</text>
+  
+  <!-- 송파구 -->
+  <path d="M 530 350 L 610 345 L 620 420 L 570 430 L 525 425 L 520 380 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="570" y="390" font-size="11" text-anchor="middle" font-weight="bold">송파구</text>
+  
+  <!-- 강동구 -->
+  <path d="M 620 330 L 700 325 L 710 400 L 660 410 L 615 405 L 610 360 Z" fill="none" stroke="#333" stroke-width="1.5"/>
+  <text x="660" y="370" font-size="11" text-anchor="middle" font-weight="bold">강동구</text>
+  
+  <!-- 제목 -->
+  <text x="400" y="30" font-size="20" text-anchor="middle" font-weight="bold" fill="#333">서울특별시</text>
+  
+  <!-- 범례 -->
+  <text x="50" y="550" font-size="12" fill="#666">한강</text>
+  <rect x="30" y="540" width="15" height="10" fill="#4a90e2" opacity="0.7"/>
+  
+  <text x="120" y="550" font-size="12" fill="#666">산</text>
+  <circle cx="105" cy="545" r="5" fill="#8fbc8f" opacity="0.6"/>
+  
+  <!-- 나침반 -->
+  <g transform="translate(720, 80)">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#666" stroke-width="2"/>
+    <path d="M 0,-20 L 5,-5 L 0,0 L -5,-5 Z" fill="#333"/>
+    <text x="0" y="-28" font-size="14" text-anchor="middle" font-weight="bold">N</text>
+  </g>
+</svg>
