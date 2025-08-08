@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" aria-label="서울특별시 구 경계 포함 개략 지도">
+  <defs>
+    <style>
+      .bg { fill: #f6f7f8; }
+      .water { fill: #a8cffd; stroke: #7fb6f8; stroke-width: 3; }
+      .stream { fill: none; stroke: #7fb6f8; stroke-width: 6; stroke-linecap: round; opacity: .9;}
+      .district { fill: #f2efe7; stroke: #4b5563; stroke-width: 1.2; }
+      .district:hover { fill: #fffceb; stroke-width: 2; }
+      .label { font: 600 14px/1.1 "Noto Sans KR", system-ui, -apple-system, Segoe UI, Roboto, "Apple SD Gothic Neo", sans-serif; fill: #1f2937; pointer-events: none; }
+      .water-label { font: 700 16px/1.1 "Noto Sans KR", sans-serif; fill: #22577a; opacity: .8; }
+      .hill { fill: #cfe8c7; stroke: #7aa874; stroke-width: 1; opacity: .9; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="800"/>
+
+  <!-- 한강 (대략적 곡선) -->
+
+<path class="water" d="M10,430 
+ C150,410 200,470 320,460 
+ S520,390 620,420 
+ S780,480 900,450 
+ S1050,380 1190,420 
+ L1190,520 
+ C1040,480 940,540 860,530 
+ S700,470 620,500 
+ S460,560 340,540 
+ S160,480 10,510 Z" />
+
+  <!-- 여의도 (강 중앙의 섬) -->
+
+  <path class="district" id="yeouido" data-name="여의도(영등포구)" d="M420,440  520,440  555,455  530,480  470,490  425,470 Z">
+    <title>여의도 (행정구역: 영등포구)</title>
+  </path>
+
+  <!-- 하천들 -->
+
+  <!-- 청계천/중랑천 계통 -->
+
+  <path class="stream" d="M350,320 C420,330 470,340 520,350 580,360 640,350 700,330 740,320 780,310 820,300"/>
+  <!-- 중랑천 하류 합류부 표시 -->
+  <circle cx="820" cy="300" r="6" fill="#7fb6f8"/>
+  <!-- 탄천 -->
+  <path class="stream" d="M980,700 C940,660 910,620 880,600 860,585 850,560 850,540"/>
+  <!-- 안양천 -->
+  <path class="stream" d="M180,720 C240,690 290,660 330,640 360,620 390,590 420,560"/>
+
+  <!-- 주요 산악지형(도식) -->
+
+  <path class="hill" d="M250,170  280,120  310,170 Z"/>
+  <text class="label" x="260" y="115">북한산</text>
+
+  <path class="hill" d="M620,130  650,90  680,140 Z"/>
+  <text class="label" x="610" y="85">도봉산</text>
+
+  <path class="hill" d="M960,210  990,170  1020,220 Z"/>
+  <text class="label" x="952" y="165">아차산</text>
+
+  <path class="hill" d="M600,730  630,690  660,740 Z"/>
+  <text class="label" x="590" y="685">관악산</text>
+
+  <!-- ====== 북쪽(강북) 14개 구 ====== -->
+
+  <!-- 은평구 -->
+
+<polygon class="district" id="eunpyeong" data-name="은평구"
+ points="160,160  230,140  300,160  330,210  320,260  280,280  230,260  180,220"> <title>은평구</title> </polygon> <text class="label" x="230" y="210">은평</text>
+
+  <!-- 서대문구 -->
+
+<polygon class="district" id="seodaemun" data-name="서대문구"
+ points="320,240  370,220  420,230  430,270  410,300  340,310  300,290"> <title>서대문구</title> </polygon> <text class="label" x="355" y="275">서대문</text>
+
+  <!-- 마포구 -->
+
+<polygon class="district" id="mapo" data-name="마포구"
+ points="220,340  300,330  360,340  420,360  430,390  380,430  320,440  260,430  220,390"> <title>마포구</title> </polygon> <text class="label" x="315" y="390">마포</text>
+
+  <!-- 종로구 -->
+
+<polygon class="district" id="jongno" data-name="종로구"
+ points="380,180  450,160  520,180  540,220  520,250  470,270  420,260  380,230"> <title>종로구</title> </polygon> <text class="label" x="440" y="220">종로</text>
+
+  <!-- 중구(강북) -->
+
+<polygon class="district" id="jung" data-name="중구"
+ points="420,280  470,290  520,300  520,330  480,350  430,340  400,320"> <title>중구</title> </polygon> <text class="label" x="460" y="325">중구</text>
+
+  <!-- 용산구 -->
+
+<polygon class="district" id="yongsan" data-name="용산구"
+ points="430,360  480,350  520,360  560,380  560,420  520,430  470,410  440,390"> <title>용산구</title> </polygon> <text class="label" x="495" y="395">용산</text>
+
+  <!-- 성북구 -->
+
+<polygon class="district" id="seongbuk" data-name="성북구"
+ points="430,150  490,140  540,160  560,190  540,220  500,240  450,230  420,200"> <title>성북구</title> </polygon> <text class="label" x="490" y="195">성북</text>
+
+  <!-- 동대문구 -->
+
+<polygon class="district" id="dongdaemun" data-name="동대문구"
+ points="540,220  590,220  630,240  630,270  600,300  560,300  520,270"> <title>동대문구</title> </polygon> <text class="label" x="575" y="265">동대문</text>
+
+  <!-- 성동구 -->
+
+<polygon class="district" id="seongdong" data-name="성동구"
+ points="560,330  610,330  650,340  650,370  620,390  580,390  550,370"> <title>성동구</title> </polygon> <text class="label" x="600" y="370">성동</text>
+
+  <!-- 광진구 -->
+
+<polygon class="district" id="gwangjin" data-name="광진구"
+ points="650,320  720,320  770,330  780,360  760,380  700,380  650,360"> <title>광진구</title> </polygon> <text class="label" x="710" y="355">광진</text>
+
+  <!-- 중랑구 -->
+
+<polygon class="district" id="jungnang" data-name="중랑구"
+ points="620,220  680,200  740,210  780,240  770,280  730,300  680,300  630,270"> <title>중랑구</title> </polygon> <text class="label" x="690" y="260">중랑</text>
+
+  <!-- 강북구 -->
+
+<polygon class="district" id="gangbuk" data-name="강북구"
+ points="540,160  590,150  620,160  630,190  610,210  560,210"> <title>강북구</title> </polygon> <text class="label" x="585" y="185">강북</text>
+
+  <!-- 도봉구 -->
+
+<polygon class="district" id="dobong" data-name="도봉구"
+ points="620,120  660,110  700,120  710,160  680,180  640,170"> <title>도봉구</title> </polygon> <text class="label" x="660" y="150">도봉</text>
+
+  <!-- 노원구 -->
+
+<polygon class="district" id="nowon" data-name="노원구"
+ points="700,140  760,130  820,150  850,180  840,220  800,240  760,220  730,180"> <title>노원구</title> </polygon> <text class="label" x="780" y="190">노원</text>
+
+  <!-- ====== 남쪽(강남) 11개 구 ====== -->
+
+  <!-- 강서구 -->
+
+<polygon class="district" id="gangseo" data-name="강서구"
+ points="100,520  180,500  240,520  260,560  240,600  180,620  120,600  90,560"> <title>강서구</title> </polygon> <text class="label" x="170" y="575">강서</text>
+
+  <!-- 양천구 -->
+
+<polygon class="district" id="yangcheon" data-name="양천구"
+ points="260,560  320,540  360,560  360,600  330,630  280,640  250,610"> <title>양천구</title> </polygon> <text class="label" x="310" y="600">양천</text>
+
+  <!-- 영등포구 -->
+
+<polygon class="district" id="yeongdeungpo" data-name="영등포구"
+ points="360,520  420,510  470,520  500,540  490,580  450,600  400,590  360,560"> <title>영등포구</title> </polygon> <text class="label" x="425" y="565">영등포</text>
+
+  <!-- 구로구 -->
+
+<polygon class="district" id="guro" data-name="구로구"
+ points="280,640  330,630  380,640  410,670  400,710  360,730  310,720  280,690"> <title>구로구</title> </polygon> <text class="label" x="345" y="695">구로</text>
+
+  <!-- 금천구 -->
+
+<polygon class="district" id="geumcheon" data-name="금천구"
+ points="410,670  440,660  490,670  510,700  500,740  460,750  420,730  400,710"> <title>금천구</title> </polygon> <text class="label" x="460" y="715">금천</text>
+
+  <!-- 동작구 -->
+
+<polygon class="district" id="dongjak" data-name="동작구"
+ points="500,540  540,520  580,530  600,560  580,600  540,610  500,590"> <title>동작구</title> </polygon> <text class="label" x="545" y="575">동작</text>
+
+  <!-- 관악구 -->
+
+<polygon class="district" id="gwanak" data-name="관악구"
+ points="520,610  560,600  600,610  640,640  630,700  580,720  520,710  500,670"> <title>관악구</title> </polygon> <text class="label" x="575" y="665">관악</text>
+
+  <!-- 서초구 -->
+
+<polygon class="district" id="seocho" data-name="서초구"
+ points="600,560  660,540  720,550  740,590  720,630  670,660  620,640  600,610"> <title>서초구</title> </polygon> <text class="label" x="675" y="605">서초</text>
+
+  <!-- 강남구 -->
+
+<polygon class="district" id="gangnam" data-name="강남구"
+ points="740,560  800,540  860,550  880,590  860,630  800,640  750,620"> <title>강남구</title> </polygon> <text class="label" x="805" y="600">강남</text>
+
+  <!-- 송파구 -->
+
+<polygon class="district" id="songpa" data-name="송파구"
+ points="860,550  920,540  980,550  1000,590  980,630  920,640  870,620"> <title>송파구</title> </polygon> <text class="label" x="930" y="600">송파</text>
+
+  <!-- 강동구 -->
+
+<polygon class="district" id="gangdong" data-name="강동구"
+ points="980,550  1040,540  1100,550  1120,590  1090,620  1030,630  990,610"> <title>강동구</title> </polygon> <text class="label" x="1040" y="600">강동</text>
+
+  <!-- 한강 라벨 -->
+
+<text class="water-label" x="640" y="470">한강</text> <text class="water-label" x="830" y="320">중랑천</text> <text class="water-label" x="845" y="560">탄천</text> <text class="water-label" x="420" y="560">안양천</text> <text class="water-label" x="520" y="340">청계천</text> </svg>
+</body>
+</html>
