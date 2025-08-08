@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>서울 자치구 SVG 지도 (개략도)</title>
+  <style>
+    :root{
+      --bg:#f8fafc; /* slate-50 */
+      --land:#fff;   /* white */
+      --border:#334155; /* slate-700 */
+      --river:#60a5fa; /* blue-400 */
+      --stream:#93c5fd; /* blue-300 */
+      --park:#86efac; /* green-300 */
+      --label:#0f172a; /* slate-900 */
+      --muted:#64748b; /* slate-500 */
+      --highlight:#fde68a; /* amber-300 */
+      --hover:#fef08a; /* yellow-200 */
+    }
+    html,body{height:100%;margin:0;background:var(--bg);font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"}
+    .wrap{max-width:1100px;margin:24px auto;padding:16px}
+    h1{margin:0 0 8px;font-size:24px;color:#0f172a}
+    .note{color:var(--muted);margin-bottom:12px}
+    svg{width:100%;height:auto;background:var(--bg);border-radius:16px;box-shadow:0 10px 24px rgba(2,6,23,.08)}
+    .gu{fill:var(--land);stroke:var(--border);stroke-width:1.2}
+    .gu:hover{fill:var(--hover)}
+    .gu[data-selected="true"]{fill:var(--highlight)}
+    .label{font-size:10px;fill:var(--label);text-anchor:middle;pointer-events:none}
+    .water{fill:var(--river);stroke:#2563eb;stroke-width:0.8;opacity:.95}
+    .stream{fill:var(--stream);opacity:0.9}
+    .park{fill:var(--park);opacity:.9;stroke:#16a34a;stroke-width:.6}
+    .legend{font-size:12px;fill:var(--label)}
+    .legend rect{stroke:var(--border);fill:#fff}
+    .meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px;color:var(--muted);font-size:12px}
+    .pill{background:#fff;border:1px solid #e2e8f0;border-radius:999px;padding:4px 10px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1>서울 자치구 SVG 지도 (개략도)</h1>
+  <div class="note">※ 비정밀 개략도입니다. 실제 행정구 경계와 위치는 단순화·축약하여 표현되었습니다. 한강·지류·산지는 상징적으로 배치했습니다.</div>
+
+  <!-- 좌상단 원점 기준, 단위: 뷰박스 좌표 -->
+  <svg viewBox="0 0 1000 700" role="img" aria-label="서울 자치구 개략도">
+    <!-- 자연 지형: 공원/산지 (상징) -->
+    <g id="parks">
+      <path class="park" d="M260 130 l140 -30 40 60 -50 70 -120 -20 z" aria-label="북한산(상징)"/>
+      <path class="park" d="M500 260 l50 -20 30 35 -25 35 -55 -10 z" aria-label="낙산/북악(상징)"/>
+      <circle class="park" cx="540" cy="370" r="18" aria-label="남산(상징)"/>
+    </g>
+
+    <!-- 수계: 한강 및 주요 지류 (개략) -->
+    <g id="waters">
+      <!-- 한강 본류 -->
+      <path class="water" d="M80 420 C 200 400, 360 410, 460 420 S 720 450, 920 430 L 920 520 80 520 Z" aria-label="한강"/>
+      <!-- 여의도 섬(상징) -->
+      <ellipse class="stream" cx="380" cy="470" rx="55" ry="20" aria-label="여의도(상징)"/>
+      <!-- 중랑천(개략) -->
+      <path class="stream" d="M720 200 l-40 70 -60 40 -60 35 -40 30 0 20 220 0 0 -25 -50 -20 40 -65 30 -80 z" aria-label="중랑천"/>
+      <!-- 탄천(개략) -->
+      <path class="stream" d="M800 650 l-40 -110 -60 -60 -30 -25 -20 0 0 90 150 105 z" aria-label="탄천"/>
+      <!-- 안양천(개략) -->
+      <path class="stream" d="M120 640 l60 -110 60 -70 60 -40 40 0 0 100 -220 120 z" aria-label="안양천"/>
+    </g>
+
+    <!-- 자치구 레이어: 대략적 위치/경계. 각 구는 단순화된 폴리곤입니다. -->
+    <g id="districts">
+      <!-- 북서부권 -->
+      <polygon class="gu" id="eunpyeong" points="200,140 320,110 360,170 330,220 240,230 190,190" data-name="은평구"/>
+      <polygon class="gu" id="seodaemun" points="330,190 390,180 440,210 420,250 340,260 310,230" data-name="서대문구"/>
+      <polygon class="gu" id="mapo" points="280,300 360,290 420,310 420,360 360,390 300,380 260,350" data-name="마포구"/>
+
+      <!-- 도심권 북부 -->
+      <polygon class="gu" id="jongno" points="430,210 520,190 560,220 540,260 480,280 420,260" data-name="종로구"/>
+      <polygon class="gu" id="jung" points="470,300 520,290 560,310 550,350 500,360 440,340" data-name="중구"/>
+      <polygon class="gu" id="yongsan" points="430,360 500,370 540,380 520,420 470,430 420,400" data-name="용산구"/>
+
+      <!-- 동북권 -->
+      <polygon class="gu" id="seongbuk" points="520,200 590,180 620,210 600,250 560,260 540,230" data-name="성북구"/>
+      <polygon class="gu" id="dongdaemun" points="560,260 610,250 650,270 640,310 590,320 550,300" data-name="동대문구"/>
+      <polygon class="gu" id="seongdong" points="570,340 620,330 660,350 650,380 600,390 560,370" data-name="성동구"/>
+      <polygon class="gu" id="gwangjin" points="660,320 720,310 740,340 730,370 680,380 640,360" data-name="광진구"/>
+      <polygon class="gu" id="jungnang" points="660,260 720,230 760,260 740,310 690,320 640,300" data-name="중랑구"/>
+      <polygon class="gu" id="gangbuk" points="520,150 570,140 600,165 590,190 540,200 510,180" data-name="강북구"/>
+      <polygon class="gu" id="dobong" points="600,140 650,130 680,160 660,190 610,190 595,165" data-name="도봉구"/>
+      <polygon class="gu" id="nowon" points="660,150 740,140 780,170 760,220 700,230 650,190" data-name="노원구"/>
+
+      <!-- 서남권(한강 남측 서부 포함) -->
+      <polygon class="gu" id="gangseo" points="110,420 220,410 260,430 260,500 160,520 100,500" data-name="강서구"/>
+      <polygon class="gu" id="yangcheon" points="220,430 280,420 320,440 310,500 240,520 200,500" data-name="양천구"/>
+      <polygon class="gu" id="guro" points="240,520 310,500 350,520 320,590 260,610 210,590" data-name="구로구"/>
+      <polygon class="gu" id="geumcheon" points="320,590 380,570 400,600 360,650 300,650 260,610" data-name="금천구"/>
+      <polygon class="gu" id="yeongdeungpo" points="320,460 380,450 440,460 430,500 370,510 310,500" data-name="영등포구"/>
+
+      <!-- 한강 남측 중부/동부 -->
+      <polygon class="gu" id="dongjak" points="420,480 480,470 520,480 510,520 460,530 420,510" data-name="동작구"/>
+      <polygon class="gu" id="gwanak" points="430,540 490,530 520,560 480,610 420,620 380,570" data-name="관악구"/>
+      <polygon class="gu" id="seocho" points="520,490 600,480 620,520 600,560 540,570 510,530" data-name="서초구"/>
+      <polygon class="gu" id="gangnam" points="600,480 680,470 710,510 700,560 640,580 600,560" data-name="강남구"/>
+      <polygon class="gu" id="songpa" points="700,480 760,470 790,500 780,560 720,580 700,540" data-name="송파구"/>
+      <polygon class="gu" id="gangdong" points="760,470 840,460 870,500 850,560 790,560 780,520" data-name="강동구"/>
+    </g>
+
+    <!-- 라벨 -->
+    <g id="labels">
+      <text class="label" x="285" y="200">은평</text>
+      <text class="label" x="380" y="230">서대문</text>
+      <text class="label" x="340" y="350">마포</text>
+
+      <text class="label" x="490" y="235">종로</text>
+      <text class="label" x="505" y="330">중</text>
+      <text class="label" x="485" y="400">용산</text>
+
+      <text class="label" x="580" y="210">성북</text>
+      <text class="label" x="600" y="295">동대문</text>
+      <text class="label" x="610" y="365">성동</text>
+      <text class="label" x="690" y="350">광진</text>
+      <text class="label" x="700" y="280">중랑</text>
+      <text class="label" x="560" y="165">강북</text>
+      <text class="label" x="635" y="165">도봉</text>
+      <text class="label" x="720" y="185">노원</text>
+
+      <text class="label" x="180" y="475">강서</text>
+      <text class="label" x="260" y="480">양천</text>
+      <text class="label" x="290" y="575">구로</text>
+      <text class="label" x="340" y="635">금천</text>
+      <text class="label" x="365" y="490">영등포</text>
+
+      <text class="label" x="470" y="505">동작</text>
+      <text class="label" x="455" y="585">관악</text>
+      <text class="label" x="565" y="535">서초</text>
+      <text class="label" x="650" y="535">강남</text>
+      <text class="label" x="740" y="535">송파</text>
+      <text class="label" x="815" y="525">강동</text>
+    </g>
+
+    <!-- 범례 -->
+    <g id="legend" transform="translate(18,18)">
+      <rect width="210" height="86" rx="10" ry="10" fill="#fff" opacity="0.9"/>
+      <g class="legend">
+        <circle cx="18" cy="20" r="6" class="water"/>
+        <text x="36" y="24">한강</text>
+        <rect x="12" y="32" width="12" height="12" class="stream"/>
+        <text x="36" y="42">지류/하천(개략)</text>
+        <rect x="12" y="52" width="12" height="12" class="park"/>
+        <text x="36" y="62">산지/공원(상징)</text>
+        <rect x="12" y="72" width="12" height="12" class="gu"/>
+        <text x="36" y="82">자치구 경계(개략)</text>
+      </g>
+    </g>
+  </svg>
+
+  <div class="meta">
+    <span class="pill">25개 자치구 라벨 포함</span>
+    <span class="pill">한강·여의도·중랑천·탄천·안양천(개략)</span>
+    <span class="pill">북한산·남산 등 상징 지형</span>
+    <span class="pill">마우스로 구를 클릭해 강조</span>
+  </div>
+</div>
+
+<script>
+  // 간단한 인터랙션: 구를 클릭하면 강조 토글
+  document.querySelectorAll('.gu').forEach(el=>{
+    el.addEventListener('click', ()=>{
+      const on = el.getAttribute('data-selected') === 'true';
+      el.setAttribute('data-selected', on ? 'false' : 'true');
+    });
+    // 접근성: 포커스 가능
+    el.setAttribute('tabindex','0');
+    el.addEventListener('keypress', (e)=>{
+      if(e.key==='Enter' || e.key===' '){
+        el.click();
+        e.preventDefault();
+      }
+    });
+    // 툴팁용 title
+    const name = el.getAttribute('data-name') || el.id;
+    const title = document.createElementNS('http://www.w3.org/2000/svg','title');
+    title.textContent = name;
+    el.appendChild(title);
+  });
+</script>
+</body>
+</html>
